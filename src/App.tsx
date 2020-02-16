@@ -7,14 +7,13 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 const styles = makeStyles({
   bannerImg: {
     width: "100%",
-    height: 300
+    height: 225
   },
-    footerStyle: {
-        background:"linear-gradient(to right, #00ff6d, #00faff)",
-        height: 100,
-        marginBottom: -100,
-        minHeight: "100%"
-    }
+  body: {
+    display: "flex",
+    flexDirection: "column",
+    height: "100%"
+  }
 });
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
     <div className="App">
       <img src={banner} className={classes.bannerImg} />
       <NavBar />
-      <div className={classes.footerStyle}/>
     </div>
   );
 };

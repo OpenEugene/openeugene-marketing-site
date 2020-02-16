@@ -6,18 +6,48 @@ const styles = makeStyles({
     display: "flex",
     flexDirection: "row",
     height: "100%",
-    justifyContent:"center"
+    justifyContent: "center"
   },
   displayImg: {
     width: "100%"
+  },
+  sideBox: {
+    flexGrow: 1,
+    minWidth: "20%"
+  },
+  middleBox: {
+    flexGrow: 2,
+    minWidth: "60%"
+  },
+  flexContainer: {
+    display: "flex",
+    width: "100%"
+  },
+  pageHeader: {
+    alignItems: "center",
+    justifyContent: "center"
   }
 });
 
 const Home = () => {
   const classes = styles();
   return (
-    <div className={classes.topImgContainer}>
-    </div>
+    <>
+      <div className={`${classes.flexContainer} + ${classes.pageHeader}`}>
+        <h1>Who Are We?</h1>
+      </div>
+      <div className={classes.flexContainer}>
+        <div className={classes.sideBox} />
+        <div className={classes.middleBox}>
+          <p>
+            Civic-minded tech and design enthusiasts. We are always looking for
+            more projects and contributors. Feel free to work on your own
+            project or jump into one in progress.
+          </p>
+        </div>
+        <div className={classes.sideBox} />
+      </div>
+    </>
   );
 };
 

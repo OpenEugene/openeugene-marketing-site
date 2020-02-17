@@ -43,7 +43,7 @@ const styles = makeStyles({
   }
 });
 
-export default function NavBar() {
+export const NavBar = () => {
   const classes = styles();
   const history = createBrowserHistory();
 
@@ -53,6 +53,7 @@ export default function NavBar() {
         <AppBar position="static" className={classes.backGround}>
           <Toolbar className={classes.toolbar}>
             <Button
+              disableRipple={true}
               className={`${classes.typography} + ${classes.buttonHover}`}
               component={Link}
               to="/"
@@ -60,6 +61,7 @@ export default function NavBar() {
               Home
             </Button>
             <Button
+              disableRipple={true}
               className={`${classes.typography} + ${classes.buttonHover}`}
               component={Link}
               to="/projects"
@@ -67,6 +69,7 @@ export default function NavBar() {
               Projects
             </Button>
             <Button
+              disableRipple={true}
               className={`${classes.typography} + ${classes.buttonHover}`}
               component={Link}
               to="/schedule"
@@ -74,6 +77,15 @@ export default function NavBar() {
               Schedule
             </Button>
             <Button
+              disableRipple={true}
+              className={`${classes.typography} + ${classes.buttonHover}`}
+              component={Link}
+              to="/contributors"
+            >
+              Contributors
+            </Button>
+            <Button
+              disableRipple={true}
               className={`${classes.typography} + ${classes.buttonHover}`}
               component={Link}
               to="/contact"
@@ -86,4 +98,4 @@ export default function NavBar() {
       </div>
     </Router>
   );
-}
+};

@@ -5,12 +5,12 @@ const styles = makeStyles({
   footerStyle: {
     background: "linear-gradient(to right, #00ff6d, #00faff)",
     display: "block",
-    padding: "20px",
-    height: "60px"
+    padding: "10px",
+    height: "50px"
   }
 });
 
-export default function Footer() {
+export const Footer = () => {
   const classes = styles();
 
   return (

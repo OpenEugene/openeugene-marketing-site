@@ -1,5 +1,7 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import {Projects} from "../types/types";
+import Project from "./Project";
 
 const styles = makeStyles({
     topImgContainer: {
@@ -37,7 +39,7 @@ const styles = makeStyles({
     }
 });
 
-const Projects = () => {
+export const ProjectsPage = (projects:Projects) => {
     const classes = styles();
     return (
         <>
@@ -47,8 +49,13 @@ const Projects = () => {
             <div className={classes.flexContainer}>
                 <div className={classes.sideBox} />
                 <div className={classes.middleBox}>
-                    <div className={classes.projectImage}/>
-                    <div className={classes.projectDescription}/>
+
+
+                    {projects.projects.map((project, index) => (
+                       // <p>Hello, {person.name} from {person.country}!</p>
+                        <Project/>
+                    ))}
+
                 </div>
                 <div className={classes.sideBox} />
             </div>
@@ -56,4 +63,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default ProjectsPage;

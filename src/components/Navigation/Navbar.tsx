@@ -6,7 +6,7 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
 import createBrowserHistory from "history/createBrowserHistory";
-import Routes from "../Routes";
+import Routes from "../../Routes";
 
 const styles = makeStyles({
   root: {

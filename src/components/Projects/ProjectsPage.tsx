@@ -1,7 +1,7 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import {Projects} from "../types/types";
-import Project from "./Project";
+import {Projects} from "../../types/types";
+import ProjectTile from "../Projects/Project";
 
 const styles = makeStyles({
     topImgContainer: {
@@ -49,11 +49,8 @@ export const ProjectsPage = (projects:Projects) => {
             <div className={classes.flexContainer}>
                 <div className={classes.sideBox} />
                 <div className={classes.middleBox}>
-
-
                     {projects.projects.map((project, index) => (
-                       // <p>Hello, {person.name} from {person.country}!</p>
-                        <Project/>
+                        <ProjectTile description={project.description} imgUrl={project.imgUrl}/>
                     ))}
 
                 </div>

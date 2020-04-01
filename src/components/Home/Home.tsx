@@ -1,6 +1,5 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import KingpongImage from "../images/kingpong.jpg";
 
 const styles = makeStyles({
   topImgContainer: {
@@ -20,21 +19,9 @@ const styles = makeStyles({
     flexGrow: 2,
     minWidth: "60%"
   },
-  projectImage: {
-    flexGrow: 1,
-    minWidth: "40%"
-  },
-  projectDescription: {
-    flexGrow: 2,
-    minWidth: "60%"
-  },
-  projectDescriptionText: {
-    paddingTop:"10%"
-  },
   flexContainer: {
     display: "flex",
-    width: "100%",
-    padding:20
+    width: "100%"
   },
   pageHeader: {
     alignItems: "center",
@@ -42,23 +29,26 @@ const styles = makeStyles({
   }
 });
 
-const Project = () => {
+export const Home = () => {
   const classes = styles();
   return (
     <>
+      <div className={`${classes.flexContainer} + ${classes.pageHeader}`}>
+        <h1>Who Are We?</h1>
+      </div>
       <div className={classes.flexContainer}>
-        <div className={classes.projectImage}>
-          <img src={KingpongImage} />
-        </div>
-        <div className={classes.projectDescription}>
-          <p className={classes.projectDescriptionText}>
-            King-pong is a giant (9ft wide) pong controller used to play pong
-            projected on a giant screen (20ft wide)
+        <div className={classes.sideBox} />
+        <div className={classes.middleBox}>
+          <p>
+            Civic-minded tech and design enthusiasts. We are always looking for
+            more projects and contributors. Feel free to work on your own
+            project or jump into one in progress.
           </p>
         </div>
+        <div className={classes.sideBox} />
       </div>
     </>
   );
 };
 
-export default Project;
+export default Home;

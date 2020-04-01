@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import {NavBar} from "./Navigation/Navbar";
+import {NavBar} from "./components/Navigation/Navbar";
 import banner from "./images/banner.png";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 

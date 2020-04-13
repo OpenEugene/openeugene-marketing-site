@@ -37,15 +37,13 @@ export const SchedulePage = () => {
         <h1>Who Are We?</h1>
       </div>
       <div className={classes.flexContainer}>
-        <div className={classes.sideBox} />
-        <div className={classes.middleBox}>
+        <div>
           <p>
             Civic-minded tech and design enthusiasts. We are always looking for
             more projects and contributors. Feel free to work on your own
             project or jump into one in progress.
           </p>
         </div>
-        <div className={classes.sideBox} />
       </div>
     </>
   );

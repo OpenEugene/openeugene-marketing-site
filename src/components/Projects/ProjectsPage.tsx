@@ -21,11 +21,11 @@ const styles = makeStyles({
         flexGrow: 2,
         minWidth: "60%"
     },
-    projectImage:{
+    projectImage: {
         flexGrow: 1,
         minWidth: "40%"
     },
-    projectDescription:{
+    projectDescription: {
         flexGrow: 2,
         minWidth: "60%"
     },
@@ -36,6 +36,12 @@ const styles = makeStyles({
     pageHeader: {
         alignItems: "center",
         justifyContent: "center"
+    },
+    projectRow: {
+        display: "flex",
+        flexDirection: "row",
+        padding: "10px 0",
+        flexWrap:"wrap"
     }
 });
 
@@ -47,14 +53,14 @@ export const ProjectsPage = (projects:Projects) => {
                 <h1>Projects</h1>
             </div>
             <div className={classes.flexContainer}>
-                <div className={classes.sideBox} />
-                <div className={classes.middleBox}>
+                <div>
                     {projects.projects.map((project, index) => (
-                        <ProjectTile description={project.description} imgUrl={project.imgUrl}/>
+                        <div className={classes.projectRow}>
+                                <ProjectTile description={project.description} title={project.title} imgUrl={project.imgUrl}/>
+                        </div>
                     ))}
 
                 </div>
-                <div className={classes.sideBox} />
             </div>
         </>
     );

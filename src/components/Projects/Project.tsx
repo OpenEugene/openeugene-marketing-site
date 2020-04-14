@@ -4,14 +4,18 @@ import { Project } from "../../types/types";
 
 const styles = makeStyles({
   projectImage: {
-    flex: 1
+    flex: 1,
+    maxWidth:500
   },
   projectDescription: {
-    flex: 1,
+    flex:1,
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
-    flexDirection:"column"
+    flexDirection:"column",
+    paddingLeft: 15,
+    width:"50%",
+    maxWidth:"100%"
   }
 });
 

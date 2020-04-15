@@ -6,7 +6,8 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
 import createBrowserHistory from "history/createBrowserHistory";
-import Routes from "../Routes";
+import Routes from "../../Routes";
+import banner from "../../images/banner.png";
 
 const styles = makeStyles({
   root: {
@@ -24,10 +25,6 @@ const styles = makeStyles({
       backgroundColor: "transparent"
     }
   },
-  bannerImg: {
-    width: "100%",
-    height: 300
-  },
   typography: {
     fontFamily: "Montserrat",
     textTransform: "none"
@@ -40,6 +37,15 @@ const styles = makeStyles({
   },
   toolbar: {
     justifyContent: "center!important" as "center"
+  },
+  topImg: {
+    width: "100%",
+    height: 225
+  },
+  aligner: {
+    alignItems: "center",
+    justifyContent: "center",
+    width:"75%"
   }
 });
 
@@ -50,6 +56,7 @@ export const NavBar = () => {
   return (
     <Router history={history}>
       <div className={classes.root}>
+        <img src={banner} className={classes.topImg} />
         <AppBar position="static" className={classes.backGround}>
           <Toolbar className={classes.toolbar}>
             <Button
@@ -94,7 +101,9 @@ export const NavBar = () => {
             </Button>
           </Toolbar>
         </AppBar>
-        <Routes />
+        <div className={classes.aligner}>
+          <Routes />
+        </div>
       </div>
     </Router>
   );

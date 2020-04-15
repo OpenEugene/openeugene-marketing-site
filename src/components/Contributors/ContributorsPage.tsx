@@ -1,51 +1,45 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import {Contributor, Contributors} from "../../types/types";
+import ContributorTile from "./Contributor";
 
 const styles = makeStyles({
-  topImgContainer: {
-    display: "flex",
-    flexDirection: "row",
-    height: "100%",
-    justifyContent: "center"
-  },
-  displayImg: {
-    width: "100%"
-  },
-  sideBox: {
-    flexGrow: 1,
-    minWidth: "20%"
-  },
-  middleBox: {
+  contributorDescription: {
     flexGrow: 2,
     minWidth: "60%"
   },
   flexContainer: {
     display: "flex",
-    width: "100%"
+    flexWrap:"wrap",
+    maxWidth:"100%"
   },
   pageHeader: {
     alignItems: "center",
     justifyContent: "center"
+  },
+  contributorRow: {
+    display: "flex",
+    flexDirection: "row",
+    padding: "10px 0",
+    flexWrap: "wrap"
   }
 });
 
-export const ContributorsPage = () => {
+export const ContributorsPage = (contributors:Contributors) => {
   const classes = styles();
   return (
-    <>
-      <div className={`${classes.flexContainer} + ${classes.pageHeader}`}>
-        <h1>Who Are We?</h1>
-      </div>
-      <div className={classes.flexContainer}>
-        <div>
-          <p>
-            Civic-minded tech and design enthusiasts. We are always looking for
-            more projects and contributors. Feel free to work on your own
-            project or jump into one in progress.
-          </p>
+      <>
+        <div className={`${classes.flexContainer} + ${classes.pageHeader}`}>
+          <h1>Contributors</h1>
         </div>
-      </div>
-    </>
+        <div className={classes.flexContainer}>
+          {contributors.contributors.map((contributor: Contributor, index) => (
+              <div className={classes.contributorDescription}>
+                <ContributorTile contributorDescription={contributor.contributorDescription} name={contributor.name} imgUrl={contributor.imgUrl}/>
+              </div>
+          ))}
+        </div>
+      </>
   );
 };
 

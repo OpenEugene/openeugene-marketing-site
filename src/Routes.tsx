@@ -4,7 +4,7 @@ import Home from "./components/Home/Home";
 import ProjectsPage from "./components/Projects/ProjectsPage";
 import SchedulePage from "./components/Schedule/SchedulePage";
 import ContributorsPage from "./components/Contributors/ContributorsPage";
-import {projects} from "./Db";
+import {projects, contributors} from "./Db";
 
 export const Routes = () => {
     return (
@@ -12,7 +12,7 @@ export const Routes = () => {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/projects" component={() =><ProjectsPage projects={projects}/>} />
                 <Route exact path="/schedule" component={SchedulePage} />
-                <Route exact path="/contributors" component={ContributorsPage} />
+                <Route exact path="/contributors" component={() =><ContributorsPage contributors={contributors}/>} />
             </Switch>
     );
 };

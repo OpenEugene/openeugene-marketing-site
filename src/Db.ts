@@ -31,6 +31,21 @@ const contributor3:Contributor = {
     name: "Contributor Name",
     imgUrl:"https://via.placeholder.com/250"
 };
+const contributor4:Contributor = {
+    contributorDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper elit a erat posuere accumsan. Praesent sodales hendrerit consectetur. Vivamus nec neque ac dolor interdum varius eget at purus. Cras ac augue egestas, vulputate sem id, consectetur velit. Quisque vel ante laoreet, tincidunt mauris sit amet, cursus dui. Vestibulum justo felis, pharetra ac elit et, pretium blandit ipsum. Aenean quis elementum nisi. Quisque non condimentum massa.",
+    name: "Contributor Name",
+    imgUrl:"https://via.placeholder.com/250"
+};
+const contributor5:Contributor = {
+    contributorDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper elit a erat posuere accumsan. Praesent sodales hendrerit consectetur. Vivamus nec neque ac dolor interdum varius eget at purus. Cras ac augue egestas, vulputate sem id, consectetur velit. Quisque vel ante laoreet, tincidunt mauris sit amet, cursus dui. Vestibulum justo felis, pharetra ac elit et, pretium blandit ipsum. Aenean quis elementum nisi. Quisque non condimentum massa.",
+    name: "Contributor Name",
+    imgUrl:"https://via.placeholder.com/250"
+};
+const contributor6:Contributor = {
+    contributorDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper elit a erat posuere accumsan. Praesent sodales hendrerit consectetur. Vivamus nec neque ac dolor interdum varius eget at purus. Cras ac augue egestas, vulputate sem id, consectetur velit. Quisque vel ante laoreet, tincidunt mauris sit amet, cursus dui. Vestibulum justo felis, pharetra ac elit et, pretium blandit ipsum. Aenean quis elementum nisi. Quisque non condimentum massa.",
+    name: "Contributor Name",
+    imgUrl:"https://via.placeholder.com/250"
+};
 
 export const projects: Project[] = [kingPong, yourPriorities, virtualTownSquare];
-export const contributors: Contributor[] = [contributor1, contributor2, contributor3];
+export const contributors: Contributor[] = [contributor1, contributor2, contributor3, contributor4, contributor5, contributor6];

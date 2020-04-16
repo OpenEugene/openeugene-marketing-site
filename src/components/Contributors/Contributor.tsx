@@ -4,18 +4,12 @@ import { Contributor } from "../../types/types";
 
 const styles = makeStyles({
   contributorImage: {
-    flex: 1,
-    maxWidth: 500
+    maxHeight: 250,
+    width:"95%"
   },
   contributorDescription: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    display: "flex",
-    flexDirection: "row",
-    paddingLeft: 15,
-    width: "50%",
-    maxWidth: "100%"
+    maxHeight: 500,
+    maxWidth: "90%",
   }
 });
 

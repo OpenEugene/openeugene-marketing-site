@@ -11,11 +11,14 @@ const styles = makeStyles({
   pageHeader: {
     alignItems: "center",
     justifyContent: "center"
-  },
-  contributorContainer: {
-      flexWrap: "wrap",
-    maxWidth: "33.33%"
   }
+    // '@media (max-width: 600px)': {
+    //     button: {
+    //         width: 200
+    //     }
+    // }
+    
+
 });
 
 export const ContributorsPage = (contributors: Contributors) => {
@@ -27,13 +30,11 @@ export const ContributorsPage = (contributors: Contributors) => {
       </div>
       <div className={classes.flexContainer}>
         {contributors.contributors.map((contributor: Contributor, index) => (
-          <div className={classes.contributorContainer}>
             <ContributorTile
               contributorDescription={contributor.contributorDescription}
               name={contributor.name}
               imgUrl={contributor.imgUrl}
             />
-          </div>
         ))}
       </div>
     </>

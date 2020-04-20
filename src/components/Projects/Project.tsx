@@ -5,7 +5,8 @@ import { Project } from "../../types/types";
 const styles = makeStyles({
   projectImage: {
     flex: 1,
-    maxWidth:500
+    maxWidth:500,
+    height:"100%"
   },
   projectDescription: {
     flex:1,
@@ -14,9 +15,8 @@ const styles = makeStyles({
     display: "flex",
     flexDirection:"column",
     paddingLeft: 15,
-    width:"50%",
-    maxWidth:"100%"
-  }
+    width:"50%"
+  },
 });
 
 const ProjectTile = (project: Project) => {

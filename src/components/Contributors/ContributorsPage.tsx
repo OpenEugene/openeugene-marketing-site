@@ -12,13 +12,6 @@ const styles = makeStyles({
     alignItems: "center",
     justifyContent: "center"
   }
-    // '@media (max-width: 600px)': {
-    //     button: {
-    //         width: 200
-    //     }
-    // }
-    
-
 });
 
 export const ContributorsPage = (contributors: Contributors) => {
@@ -30,11 +23,11 @@ export const ContributorsPage = (contributors: Contributors) => {
       </div>
       <div className={classes.flexContainer}>
         {contributors.contributors.map((contributor: Contributor, index) => (
-            <ContributorTile
-              contributorDescription={contributor.contributorDescription}
-              name={contributor.name}
-              imgUrl={contributor.imgUrl}
-            />
+          <ContributorTile
+            contributorDescription={contributor.contributorDescription}
+            name={contributor.name}
+            imgUrl={contributor.imgUrl}
+          />
         ))}
       </div>
     </>

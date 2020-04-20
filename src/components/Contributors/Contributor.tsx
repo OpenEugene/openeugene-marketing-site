@@ -4,14 +4,26 @@ import { Contributor } from "../../types/types";
 
 const styles = makeStyles({
   contributor: {
-    width: "33.33%"
+    width: "32.25%",
+    borderLeft: "solid 0px transparent",
+    borderRight: "solid 0px transparent",
+    borderBottom: "solid 0px transparent",
+    boxShadow: "0 0 5px #333",
+    margin: 5
+  },
+  "@media (max-width: 600px)": {
+    contributor: {
+      width: "100%",
+      marginBottom: 25
+    }
   },
   contributorImage: {
-    maxHeight: 250,
-    width: "95%"
+    width: "100%",
+    borderBottom: "solid 1px #333",
+    maxHeight: "50%"
   },
   contributorDescription: {
-    maxHeight: 500,
+    maxHeight: "50%",
     margin: 5
   }
 });

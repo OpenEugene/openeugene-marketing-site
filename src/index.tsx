@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Router } from "react-router-dom";
-import createBrowserHistory from "history/createBrowserHistory";
+import {createBrowserHistory} from "history";
 import { Footer } from "./Footer";
 
 const history = createBrowserHistory();

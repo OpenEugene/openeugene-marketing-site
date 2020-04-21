@@ -45,7 +45,7 @@ export const ProjectsPage = (projects: Projects) => {
       </div>
       <div className={classes.flexContainer}>
         {projects.projects.map((project, index) => (
-          <div className={classes.projectRow}>
+          <div className={classes.projectRow} key={index}>
             <ProjectTile
               description={project.description}
               title={project.title}

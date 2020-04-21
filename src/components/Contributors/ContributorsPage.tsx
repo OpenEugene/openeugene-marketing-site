@@ -27,6 +27,7 @@ export const ContributorsPage = (contributors: Contributors) => {
             contributorDescription={contributor.contributorDescription}
             name={contributor.name}
             imgUrl={contributor.imgUrl}
+            key={index}
           />
         ))}
       </div>

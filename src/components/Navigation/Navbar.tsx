@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
-import createBrowserHistory from "history/createBrowserHistory";
+import {createBrowserHistory} from "history";
 import Routes from "../../Routes";
 import banner from "../../images/banner.png";
 

@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: codegold79/openeugene-marketing:0.1.1
+        image: codegold79/openeugene-marketing:0.1.2
         resources:
            limits:
               cpu: 0.25

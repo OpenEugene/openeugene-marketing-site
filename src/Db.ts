@@ -1,4 +1,6 @@
 import {Contributor, Project} from "./types/types";
+import YourPriorities from "./images/yourpriorities.png"
+import KingPong from "./images/kingpong.jpg"
 // TODO: Replace this with a backend
 
 const virtualTownSquare:Project = {
@@ -8,13 +10,18 @@ const virtualTownSquare:Project = {
 };
 const kingPong:Project = {
     title:"King Pong",
-    imgUrl:"https://via.placeholder.com/250",
+    imgUrl:KingPong,
     description:"King-pong is a giant (9ft wide) pong controller used to play pong projected on a giant screen (20ft wide)"
 };
 const yourPriorities:Project = {
     title:"Your Priorities",
-    imgUrl:"https://via.placeholder.com/250",
+    imgUrl:YourPriorities,
     description:"Your Priorities is a citizen engagement platform, a progressive web app, and a participatory social network that empowers groups of any size to speak with one voice and organize around ideas"
+};
+const openBoard:Project = {
+    title:"OpenBoard",
+    imgUrl:YourPriorities,
+    description:"An open source version of Switchboard."
 };
 const contributor1:Contributor = {
     contributorDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper elit a erat posuere accumsan. Praesent sodales hendrerit consectetur. Vivamus nec neque ac dolor interdum varius eget at purus. Cras ac augue egestas, vulputate sem id, consectetur velit. Quisque vel ante laoreet, tincidunt mauris sit amet, cursus dui. Vestibulum justo felis, pharetra ac elit et, pretium blandit ipsum. Aenean quis elementum nisi. Quisque non condimentum massa.",
@@ -47,5 +54,5 @@ const contributor6:Contributor = {
     imgUrl:"https://via.placeholder.com/250"
 };
 
-export const projects: Project[] = [kingPong, yourPriorities, virtualTownSquare];
+export const projects: Project[] = [kingPong, yourPriorities, virtualTownSquare, openBoard];
 export const contributors: Contributor[] = [contributor1, contributor2, contributor3, contributor4, contributor5, contributor6];

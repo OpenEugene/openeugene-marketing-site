@@ -1,6 +1,6 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import {Button, TextField} from "@material-ui/core";
+import { Button, TextField } from "@material-ui/core";
 
 const styles = makeStyles({
   contactForm: {
@@ -17,10 +17,10 @@ const styles = makeStyles({
     marginTop: 25,
     marginBottom: 25
   },
-  smallTextInputSpacing:{
+  smallTextInputSpacing: {
     paddingRight: 25
   },
-  largeTextInput:{
+  largeTextInput: {
     marginTop: 25,
     width: "100%"
   },
@@ -30,29 +30,29 @@ const styles = makeStyles({
     display: "flex",
     flexWrap: "wrap"
   },
-  submitButton:{
-    backgroundColor:"#FF40FF"
+  submitButton: {
+    backgroundColor: "#FF40FF"
   },
-  submitButtonContainer:{
+  submitButtonContainer: {
     display: "flex",
-    flexDirection:"row-reverse",
+    flexDirection: "row-reverse",
     justifyContent: "right",
-    paddingTop:15
+    paddingTop: 15
   },
   "@media (max-width: 600px)": {
     contactForm: {
       width: "100%"
     },
-    smallTextInputSpacing:{
+    smallTextInputSpacing: {
       paddingRight: 0
     },
-    largeTextInput:{
+    largeTextInput: {
       width: "75%"
     },
-    submitButton:{
+    submitButton: {
       marginRight: 40
     }
-  },
+  }
 });
 
 export const ContactForm = () => {
@@ -64,8 +64,13 @@ export const ContactForm = () => {
           <h1>Contact Us</h1>
         </div>
         <div>
-          <TextField required id="standard-required" label="Name" className={classes.smallTextInputSpacing} />
-          <TextField required id="standard-required" label="Email"/>
+          <TextField
+            required
+            id="standard-required"
+            label="Name"
+            className={classes.smallTextInputSpacing}
+          />
+          <TextField required id="standard-required" label="Email" />
         </div>
         <div>
           <TextField
@@ -78,9 +83,13 @@ export const ContactForm = () => {
           />
         </div>
         <div className={classes.submitButtonContainer}>
-        <Button variant="contained" color="primary" className={classes.submitButton}>
-          Submit
-        </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.submitButton}
+          >
+            Submit
+          </Button>
         </div>
       </form>
     </div>

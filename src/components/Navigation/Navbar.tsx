@@ -5,9 +5,11 @@ import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
-import {createBrowserHistory} from "history";
+import { createBrowserHistory } from "history";
 import Routes from "../../Routes";
 import banner from "../../images/banner.png";
+import ResponsiveDrawer from "./ResponsiveDrawer";
+import Media from "react-media";
 
 const styles = makeStyles({
   root: {
@@ -38,6 +40,11 @@ const styles = makeStyles({
   toolbar: {
     justifyContent: "center!important" as "center"
   },
+    "@media (max-width: 600px)": {
+        toolbar: {
+            justifyContent: "left!important" as "center"
+        }
+    },
   topImg: {
     width: "100%",
     height: 225
@@ -45,7 +52,7 @@ const styles = makeStyles({
   aligner: {
     alignItems: "center",
     justifyContent: "center",
-    width:"75%"
+    width: "75%"
   }
 });
 
@@ -54,57 +61,70 @@ export const NavBar = () => {
   const history = createBrowserHistory();
 
   return (
-    <Router history={history}>
-      <div className={classes.root}>
-        <img src={banner} className={classes.topImg} />
-        <AppBar position="static" className={classes.backGround}>
-          <Toolbar className={classes.toolbar}>
-            <Button
-              disableRipple={true}
-              className={`${classes.typography} + ${classes.buttonHover}`}
-              component={Link}
-              to="/"
-            >
-              Home
-            </Button>
-            <Button
-              disableRipple={true}
-              className={`${classes.typography} + ${classes.buttonHover}`}
-              component={Link}
-              to="/projects"
-            >
-              Projects
-            </Button>
-            <Button
-              disableRipple={true}
-              className={`${classes.typography} + ${classes.buttonHover}`}
-              component={Link}
-              to="/schedule"
-            >
-              Schedule
-            </Button>
-            <Button
-              disableRipple={true}
-              className={`${classes.typography} + ${classes.buttonHover}`}
-              component={Link}
-              to="/contributors"
-            >
-              Contributors
-            </Button>
-            <Button
-              disableRipple={true}
-              className={`${classes.typography} + ${classes.buttonHover}`}
-              component={Link}
-              to="/contact"
-            >
-              Contact
-            </Button>
-          </Toolbar>
-        </AppBar>
-        <div className={classes.aligner}>
-          <Routes />
+    <>
+      <Router history={history}>
+        <div className={classes.root}>
+          <img src={banner} className={classes.topImg} />
+          <AppBar position="static" className={classes.backGround}>
+            <Toolbar className={classes.toolbar}>
+              <Media
+                query="(max-width: 599px)"
+                render={() => <ResponsiveDrawer />}
+              />
+              <Media
+                query="(min-width: 600px)"
+                render={() => (
+                  <>
+                    <Button
+                      disableRipple={true}
+                      className={`${classes.typography} + ${classes.buttonHover}`}
+                      component={Link}
+                      to="/"
+                    >
+                      Home
+                    </Button>
+                    <Button
+                      disableRipple={true}
+                      className={`${classes.typography} + ${classes.buttonHover}`}
+                      component={Link}
+                      to="/projects"
+                    >
+                      Projects
+                    </Button>
+                    <Button
+                      disableRipple={true}
+                      className={`${classes.typography} + ${classes.buttonHover}`}
+                      component={Link}
+                      to="/schedule"
+                    >
+                      Schedule
+                    </Button>
+                    <Button
+                      disableRipple={true}
+                      className={`${classes.typography} + ${classes.buttonHover}`}
+                      component={Link}
+                      to="/contributors"
+                    >
+                      Contributors
+                    </Button>
+                    <Button
+                      disableRipple={true}
+                      className={`${classes.typography} + ${classes.buttonHover}`}
+                      component={Link}
+                      to="/contact"
+                    >
+                      Contact
+                    </Button>
+                  </>
+                )}
+              />
+            </Toolbar>
+          </AppBar>
+          <div className={classes.aligner}>
+            <Routes />
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </>
   );
 };

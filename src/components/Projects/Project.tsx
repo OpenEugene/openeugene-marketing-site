@@ -1,6 +1,7 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { Project } from "../../types/types";
+import GitHubButton from "react-github-btn";
 
 const styles = makeStyles({
   projectImage: {
@@ -27,6 +28,11 @@ const ProjectTile = (project: Project) => {
       <div className={classes.projectDescription}>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
+        <GitHubButton
+            href={project.githubLink}
+        >
+          Follow {project.title}
+        </GitHubButton>
       </div>
     </>
   );

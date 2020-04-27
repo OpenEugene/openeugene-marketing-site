@@ -50,6 +50,7 @@ export const ProjectsPage = (projects: Projects) => {
               description={project.description}
               title={project.title}
               imgUrl={project.imgUrl}
+              githubLink={project.githubLink}
             />
           </div>
         ))}

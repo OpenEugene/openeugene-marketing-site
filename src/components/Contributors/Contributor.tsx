@@ -1,6 +1,7 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { Contributor } from "../../types/types";
+import GitHubButton from "react-github-btn";
 
 const styles = makeStyles({
   contributor: {
@@ -36,6 +37,12 @@ const ContributorTile = (contributor: Contributor) => {
       <div className={classes.contributorDescription}>
         <h3>{contributor.name}</h3>
         <p>{contributor.contributorDescription}</p>
+        <GitHubButton
+            href={contributor.githubLink ? contributor.githubLink : ""}
+        >
+
+          Follow {contributor.githubUserName}
+        </GitHubButton>
       </div>
     </div>
   );

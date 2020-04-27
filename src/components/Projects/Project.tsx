@@ -1,11 +1,13 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { Project } from "../../types/types";
+import GitHubButton from "react-github-btn";
 
 const styles = makeStyles({
   projectImage: {
     flex: 1,
-    maxWidth:500
+    maxWidth:500,
+    height:"100%"
   },
   projectDescription: {
     flex:1,
@@ -14,9 +16,8 @@ const styles = makeStyles({
     display: "flex",
     flexDirection:"column",
     paddingLeft: 15,
-    width:"50%",
-    maxWidth:"100%"
-  }
+    width:"50%"
+  },
 });
 
 const ProjectTile = (project: Project) => {
@@ -27,6 +28,11 @@ const ProjectTile = (project: Project) => {
       <div className={classes.projectDescription}>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
+        <GitHubButton
+            href={project.githubLink}
+        >
+          Follow {project.title}
+        </GitHubButton>
       </div>
     </>
   );

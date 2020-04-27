@@ -35,9 +35,12 @@ export const Home = () => {
       <div className={classes.flexContainer}>
         <div>
           <p>
-            Civic-minded tech and design enthusiasts. We are always looking for
-            more projects and contributors. Feel free to work on your own
-            project or jump into one in progress.
+            Welcome to Open Eugene. We are a Code for America Brigade located in
+            Eugene, Oregon. We provide leadership and resources to help improve
+            digital services for community engagement and access to local
+            government programs. We are civic-minded tech and design enthusiasts
+            and we are always looking for more projects and contributors. Feel free to work
+            on your own project or jump into one in progress.
           </p>
         </div>
       </div>

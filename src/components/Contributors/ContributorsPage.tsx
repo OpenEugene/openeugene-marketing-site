@@ -27,6 +27,8 @@ export const ContributorsPage = (contributors: Contributors) => {
             contributorDescription={contributor.contributorDescription}
             name={contributor.name}
             imgUrl={contributor.imgUrl}
+            githubLink={contributor.githubLink}
+            githubUserName={contributor.githubUserName}
             key={index}
           />
         ))}

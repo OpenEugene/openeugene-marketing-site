@@ -7,6 +7,7 @@ const styles = makeStyles({
   projectImage: {
     flex: 1,
     maxWidth:500,
+    maxHeight:250,
     height:"100%"
   },
   projectDescription: {
@@ -17,6 +18,15 @@ const styles = makeStyles({
     flexDirection:"column",
     paddingLeft: 15,
     width:"50%"
+  },
+  linkButton: {
+    backgroundColor: "#FF40FF"
+  },
+  linkButtonContainer: {
+    display: "flex",
+    flexDirection: "row-reverse",
+    justifyContent: "right",
+    paddingTop: 15
   },
 });
 
@@ -33,6 +43,7 @@ const ProjectTile = (project: Project) => {
         >
           Follow {project.title}
         </GitHubButton>
+
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import KingPong from "./images/kingpong.jpg"
 import FrankieGoldContributorImage from "./images/FrankieGoldContributorImage.jpg"
 import MarkDavisContributorImage from "./images/MarkDavisContributorImage.jpg"
 import AustinRutledgeContributorImage from "./images/AustinRutledgeContributorImage.jpg"
-import EugeneFoodScene from "./images/m_EugeneFoodScene.png"
+import EugeneFoodScene from "./images/EugeneFoodScene.png"
 import CovidResponse from "./images/CovidResponseProjects.png"
 
 // TODO: Replace this with a backend
@@ -48,8 +48,9 @@ const littleHelpBook:Project = {
 const covid19ResponseProjects:Project = {
     title:"COVID Response Projects",
     imgUrl:CovidResponse,
-    description:"Open Eugene is holding a public forum specifically for COVID-19 related projects. If you or your organization need something done to help with a COVID-19 related issue please submit it at",
-    githubLink:"https://github.com/OpenEugene/little-help-book"
+    description:"Open Eugene is hosting an instance of Your Priorities specifically for COVID-19 related projects. If you or your organization need something done to help with a COVID-19 related issue please submit it at https://yrpri.org/group/2870",
+    githubLink:"https://github.com/OpenEugene/your-priorities-app",
+    hostedLink:"https://yrpri.org/group/2870"
 };
 const contributor1:Contributor = {
     contributorDescription: "After decade being in a chemical engineering career, Frankie switched gears and became a backend applications developer. Her first job in tech was with IDX Broker working as a PHP developer on the server side of a LAMP stack. It was followed by her current position at VMware as a remote Go (aka Golang) developer working on cloud computing application platforms. Her interest with Go and cloud computing has led her to projects like OpenBoard and containerizing OpenEugene apps with Docker to deploy onto the MVP Studios Kubernetes cluster. Just as teaching has been said to be a good way to master a subject, Frankie believes contributing to the community is a great way to gain skills and improve as a developer.",

@@ -3,6 +3,7 @@ export interface Project {
   description: string;
   title:string;
   githubLink:string;
+  hostedLink?:string;
 }
 export interface Contributor {
   imgUrl: string;

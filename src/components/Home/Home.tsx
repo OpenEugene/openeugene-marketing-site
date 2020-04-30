@@ -1,8 +1,7 @@
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import HomeImage from "../../images/HomePage1.jpg"
-// @ts-ignore
-import { SocialIcon } from 'react-social-icons';
+
 
 const styles = makeStyles({
   topImgContainer: {
@@ -29,14 +28,7 @@ const styles = makeStyles({
   paragraphHeader:{
     fontSize:"1.5rem"
   },
-  socialMediaIconsContainer:{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  socialMediaIcons:{
-    margin:2.5
-  },
+
   bodyImage:{
     maxWidth: 600
   }
@@ -61,13 +53,8 @@ export const Home = () => {
             on your own project or jump into one in progress.
           </p>
           <p className={classes.paragraphHeader}>Have a project?</p>
-          <p>We eagerly accept new projects. Please reach out to us via the contact page on this website.</p>
+          <p>We eagerly accept new projects. Please reach out to us via social media.</p>
           <p className={classes.paragraphHeader}>Social Media</p>
-          <div className={classes.socialMediaIconsContainer}>
-            <SocialIcon url="https://www.facebook.com/openeugene" className={classes.socialMediaIcons} />
-            <SocialIcon url="https://twitter.com/open_eugene" className={classes.socialMediaIcons} />
-            <SocialIcon url="https://github.com/OpenEugene" className={classes.socialMediaIcons} />
-          </div>
         </div>
       </div>
     </>

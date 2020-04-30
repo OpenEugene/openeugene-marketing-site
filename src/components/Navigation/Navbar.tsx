@@ -91,14 +91,14 @@ export const NavBar = () => {
                     >
                       Projects
                     </Button>
-                    <Button
-                      disableRipple={true}
-                      className={`${classes.typography} + ${classes.buttonHover}`}
-                      component={Link}
-                      to="/schedule"
-                    >
-                      Schedule
-                    </Button>
+                    {/*<Button*/}
+                    {/*  disableRipple={true}*/}
+                    {/*  className={`${classes.typography} + ${classes.buttonHover}`}*/}
+                    {/*  component={Link}*/}
+                    {/*  to="/schedule"*/}
+                    {/*>*/}
+                    {/*  Schedule*/}
+                    {/*</Button>*/}
                     <Button
                       disableRipple={true}
                       className={`${classes.typography} + ${classes.buttonHover}`}

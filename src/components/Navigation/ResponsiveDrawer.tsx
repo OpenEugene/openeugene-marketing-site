@@ -37,8 +37,11 @@ export default function ResponsiveDrawer() {
   const [state, setState] = React.useState({
     left: false
   });
-  const labels = ["Home", "Projects", "Schedule", "Contributors", "Contact"];
-  const routes = ["/", "/projects", "/schedule", "contributors", "contact"];
+  // const labels = ["Home", "Projects", "Schedule", "Contributors", "Contact"];
+  // const routes = ["/", "/projects", "/schedule", "contributors", "contact"];
+
+  const labels = ["Home", "Projects", "Contributors", "Contact"];
+  const routes = ["/", "/projects", "contributors", "contact"];
 
   const toggleDrawer = (anchor: Anchor, open: boolean) => (
     event: React.KeyboardEvent | React.MouseEvent

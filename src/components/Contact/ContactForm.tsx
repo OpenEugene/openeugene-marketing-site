@@ -30,10 +30,10 @@ const styles = makeStyles({
     display: "flex",
     flexWrap: "wrap"
   },
-  submitButton: {
+  linkButton: {
     backgroundColor: "#FF40FF"
   },
-  submitButtonContainer: {
+  linkButtonContainer: {
     display: "flex",
     flexDirection: "row-reverse",
     justifyContent: "right",
@@ -49,7 +49,7 @@ const styles = makeStyles({
     largeTextInput: {
       width: "75%"
     },
-    submitButton: {
+    linkButton: {
       marginRight: 40
     }
   }
@@ -82,11 +82,11 @@ export const ContactForm = () => {
             className={classes.largeTextInput}
           />
         </div>
-        <div className={classes.submitButtonContainer}>
+        <div className={classes.linkButtonContainer}>
           <Button
             variant="contained"
             color="primary"
-            className={classes.submitButton}
+            className={classes.linkButton}
           >
             Submit
           </Button>

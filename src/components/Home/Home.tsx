@@ -30,7 +30,8 @@ const styles = makeStyles({
   },
 
   bodyImage:{
-    maxWidth: 600
+    maxWidth:"100%",
+    maxHeight: 300
   }
 });
 
@@ -54,7 +55,6 @@ export const Home = () => {
           </p>
           <p className={classes.paragraphHeader}>Have a project?</p>
           <p>We eagerly accept new projects. Please reach out to us via social media.</p>
-          <p className={classes.paragraphHeader}>Social Media</p>
         </div>
       </div>
     </>

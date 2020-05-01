@@ -51,6 +51,7 @@ export const ProjectsPage = (projects: Projects) => {
               title={project.title}
               imgUrl={project.imgUrl}
               githubLink={project.githubLink}
+              hostedLink={project.hostedLink}
             />
           </div>
         ))}

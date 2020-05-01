@@ -11,7 +11,6 @@ import CovidResponse from "./images/CovidResponseProjects.png"
 
 const virtualTownSquare:Project = {
     title:"Virtual Town Square",
-    imgUrl:"https://via.placeholder.com/250",
     description:"Virtual town square is a locally hosted videoconferencing solutions for public and civic projects.",
     githubLink:"https://github.com/OpenEugene/virtual-town-square"
 };
@@ -35,20 +34,18 @@ const yourPriorities:Project = {
 };
 const openBoard:Project = {
     title:"OpenBoard",
-    imgUrl:"https://via.placeholder.com/250",
     description:"An open source version of Switchboard. This project is currently seeking open source contributors",
     githubLink:"https://github.com/OpenEugene/openboard"
 };
 const littleHelpBook:Project = {
     title:"Little Help Book",
-    imgUrl:"https://via.placeholder.com/250",
     description:"Because we all just need a little help. This project is currently seeking open source contributors",
     githubLink:"https://github.com/OpenEugene/little-help-book"
 };
 const covid19ResponseProjects:Project = {
     title:"COVID Response Projects",
     imgUrl:CovidResponse,
-    description:"Open Eugene is hosting an instance of Your Priorities specifically for COVID-19 related projects. If you or your organization need something done to help with a COVID-19 related issue please submit it at https://yrpri.org/group/2870",
+    description:"Open Eugene is hosting an instance of Your Priorities specifically for COVID-19 related projects. If you or your organization need something done to help with a COVID-19 related issue please submit it",
     githubLink:"https://github.com/OpenEugene/your-priorities-app",
     hostedLink:"https://yrpri.org/group/2870"
 };

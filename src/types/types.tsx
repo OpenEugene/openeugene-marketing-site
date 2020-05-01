@@ -1,5 +1,5 @@
 export interface Project {
-  imgUrl: string;
+  imgUrl?: string;
   description: string;
   title:string;
   githubLink:string;

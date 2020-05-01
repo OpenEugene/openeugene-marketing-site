@@ -1,8 +1,9 @@
 export interface Project {
-  imgUrl: string;
+  imgUrl?: string;
   description: string;
   title:string;
   githubLink:string;
+  hostedLink?:string;
 }
 export interface Contributor {
   imgUrl: string;

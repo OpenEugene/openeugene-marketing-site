@@ -53,5 +53,8 @@
       "last 1 edge version",
       "ie 11"
     ]
+  },
+  "devDependencies": {
+    "react-social-icons": "^4.1.0"
   }
 }

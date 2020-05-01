@@ -34,7 +34,7 @@ const yourPriorities:Project = {
 };
 const openBoard:Project = {
     title:"OpenBoard",
-    description:"An open source version of Switchboard. This project is currently seeking open source contributors",
+    description:"An open source version of Switchboard. This project is currently seeking open source contributors interested in working with Go (backend) and/or Elm (frontend).",
     githubLink:"https://github.com/OpenEugene/openboard"
 };
 const littleHelpBook:Project = {
@@ -49,21 +49,21 @@ const covid19ResponseProjects:Project = {
     githubLink:"https://github.com/OpenEugene/your-priorities-app",
     hostedLink:"https://yrpri.org/group/2870"
 };
-const contributor1:Contributor = {
+const FrankieGold:Contributor = {
     contributorDescription: "After decade being in a chemical engineering career, Frankie switched gears and became a backend applications developer. Her first job in tech was with IDX Broker working as a PHP developer on the server side of a LAMP stack. It was followed by her current position at VMware as a remote Go (aka Golang) developer working on cloud computing application platforms. Her interest with Go and cloud computing has led her to projects like OpenBoard and containerizing OpenEugene apps with Docker to deploy onto the MVP Studios Kubernetes cluster. Just as teaching has been said to be a good way to master a subject, Frankie believes contributing to the community is a great way to gain skills and improve as a developer.",
     name: "Frankie Gold",
     imgUrl:FrankieGoldContributorImage,
     githubUserName: "@codegold79",
     githubLink:"https://github.com/codegold79"
 };
-const contributor2:Contributor = {
+const MarkDavis:Contributor = {
     contributorDescription: "Founded Open Eugene as Mozilla Open Leaders project that became the Open Eugene Festival in 2018.  Open Eugene became a Code for America brigade in 2019 to join the national network of civic software-as-infrastructure projects.  Mark works as a  Captain for Open Eugene galvanizing civic tech leadership with local agencies to support efforts related to COVID response.  Mark also founded MVP Studio that provides hosting for civic projects, Dark Matter Consulting and the CodeChops coworking space in Eugene.",
     name: "Mark Davis",
     imgUrl:MarkDavisContributorImage,
     githubUserName: "@nohorse",
     githubLink:"https://github.com/nohorse"
 };
-const contributor3:Contributor = {
+const AustinRutledge:Contributor = {
     contributorDescription: "A graduate of Lane Community College, Austin Rutledge is a seasoned full stack web developer. He has experience with many technologies and his favorite stack is React/C#/SQL. He has worked with some of the top start ups and companies in town. His favorite thing about programming is building cool things that people want to use. He is currently working as an independent technology consultant for various clients and loves contributing to open source projects in his spare time.",
     name: "Austin Rutledge",
     imgUrl:AustinRutledgeContributorImage,
@@ -72,4 +72,4 @@ const contributor3:Contributor = {
 };
 
 export const projects: Project[] = [covid19ResponseProjects, eugeneFoodScene, kingPong, yourPriorities, virtualTownSquare, openBoard, littleHelpBook];
-export const contributors: Contributor[] = [contributor1, contributor2, contributor3];
+export const contributors: Contributor[] = [FrankieGold, MarkDavis, AustinRutledge];
